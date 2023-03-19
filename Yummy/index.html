@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yummy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar bg-body-tertiary fixed-top vh-100 d-flex">
+    <div class="container vh-100">
+      <div class="">
+        <img src="img/logo.png" alt="logo" class="logo" />
+      </div>
+
+      <div>
+        <button id="nav-btn" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="offcanvas offcanvas-start start-0 w-25" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#" id="search-btn">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="categories">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="area-btn">Area</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="ingredients">Ingredients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="contact-btn">Contact Us</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-center w-100">
+        <i class="fa-solid fa-globe w-100 text-center pb-2"></i>
+        <i class="fa-solid fa-share-nodes text-center"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+ <!-- search start -->
+ <section class="w-95">
+  <div class="w-75 d-flex ms-auto justify-content-center d-none" id="s-holder">
+    <input class="form-control me-2 w-50" type="search" placeholder="Search by name" aria-label="Search" id="search-name">
+    <input class="form-control me-2 w-50" type="search" placeholder="Search first letter" aria-label="Search" id="search-fl">
+  </div>
+  <div class="p-5 ms-auto row d-none" id="search-container">
+    
+  </div>
+   </section>
+<!-- search end  -->
+
+  <!-- search start -->
+  <section class="w-95">
+    <div class="p-5 ms-auto row d-none" id="search-container">
+      
+    </div>
+  </section>
+<!-- search end -->
+
+  <!-- food container start -->
+  <section class="w-95">
+    <div class="p-5 ms-auto row" id="food-container">
+      <!-- <div class="col-md-3 mb-3">
+                <div class="position-relative overflow-hidden rounded-2">
+                    <div class="card position-relative">
+                        <img src="https://www.themealdb.com/images/media/meals/txsupu1511815755.jpg"
+                            class="card-img-top" alt="...">
+                        <div
+                            class=" meal-layer card-body position-absolute h-100 d-flex justify-content-center align-items-center bg-white opacity-0">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    </div>
+  </section>
+  <!-- food container end -->
+
+  <!-- categories start -->
+  <section class="w-95">
+    <div class="p-5 ms-auto row d-none" id="categories-container">
+    </div>
+  </section>
+  <!-- categories end  -->
+
+  <!-- categories of cate start -->
+  <section class="w-95">
+    <div class="p-5 ms-auto row d-none" id="categories-cat-container">
+
+    </div>
+  </section>
+  <!-- categoreis of cate end -->
+
+<!-- ingegories start -->
+  <section class="w-95">
+    <div class="p-5 ms-auto row d-none" id="ingegories-cat-container">
+
+    </div>
+  </section>
+<!-- ingegories end -->
+
+<!-- area start -->
+  <section class="w-95">
+    <div class="p-5 ms-auto row d-none" id="area-container">
+
+    </div>
+  </section>
+  <!-- area end -->
+<!-- contact start -->
+  <section class="w-95">
+    <div class="p-5 ms-auto row d-none w-100 d-flex justify-content-center align-items-center flex-wrap d-none" id="contact-container">
+
+      <form action="" class="w-100 d-flex justify-content-center align-items-center flex-wrap" >
+        <input class="form-control me-2 w-30 m-5" type="text" placeholder="Enter Your Name">
+      <input class="form-control me-2 w-30 m-5" type="email" placeholder="Enter Your Email" id="contact-email"/>
+      <input class="form-control me-2 w-30 m-5" type="number" placeholder="Enter Your Phone"/>
+      <input class="form-control me-2 w-30 m-5" type="number" placeholder="Enter Your Age"/>
+      <input class="form-control me-2 w-30 m-5" type="password" placeholder="Enter Your Password"/>
+      <input class="form-control me-2 w-30 m-5" type="password" placeholder="Re Password"/>
+      </form>
+      <button id="submitBtn"  class="btn btn-outline-danger px-2 mt-3 w-25 disabled">Submit</button>
+
+    </div>
+    
+  </section>
+<!-- end contact -->
+
+ 
+
+
+
+
+  <!-- show data start -->
+  <section class="w-95">
+    <div id="modal" class="w-95 vh-100 ms-auto pb-5 d-none">
+      <div class="h-100 d-flex flex-wrap">
+        <a href="" id="closeForm" class="fs-1 text-danger text-decoration-none w-100 mx-5">&times;</a>
+
+        <div class="w-25 d-flex flex-wrap align-items-center mx-5 mb-auto" id="meal-thumb">
+          <!-- <img class="w-100 rounded-3" src="img/g046bb1663960946.jpg" alt="tumb" /> -->
+        </div>
+        <div id="gameDesc" class="w-50 p-5">
+          <h1 class="text-white">Instructions</h1>
+          <p class="text-white" id="mealDesc">
+
+          </p>
+          <h2 class="text-white" id="area">Area :</h2>
+          <h4 class="text-white" id="category">Category :</h4>
+          <h4 class="text-white" id="platform">Platform:</h4>
+
+          <div class="w-100 m-2 d-flex">
+            <h6 class="bg-info rounded-3 p-2">oil</h6>
+          </div>
+
+
+          <a href="" class="btn text-white border-warning">Show Meal</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- show data end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="Jquery/jquery-3.6.4.min.js"></script>
+
+  <script src="main.js"></script>
+  <script src="categories/categories.js"></script>
+  <script src="search/search.js"></script>
+  <script src="search/searchFL.js"></script>
+  <script src="ingredients/ingredients.js"></script>
+  <script src="area/area.js"></script>
+  <script src="contact.js"></script>
+</body>
+
+</html>
